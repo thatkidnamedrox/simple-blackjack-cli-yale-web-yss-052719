@@ -52,7 +52,7 @@ def hit?(card_total)
     return card_total
   else
     invalid_command
-    return card_total
+    hit?(card_total)
   end
 
 end
@@ -60,7 +60,6 @@ end
 def invalid_command
   # code invalid_command here
   puts "Please enter a valid command."
-  prompt_user
 end
 
 #####################################################
@@ -69,4 +68,8 @@ end
 
 def runner
   # code runner here
+  welcome
+  initial_round
+  prompt_user
+  hit?
 end
