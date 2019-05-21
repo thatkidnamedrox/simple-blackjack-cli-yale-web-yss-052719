@@ -45,7 +45,6 @@ def hit?(card_total)
 
   case answer
   when 's'
-    hit?(card_total)
     return card_total
   when 'h'
     number = deal_card
